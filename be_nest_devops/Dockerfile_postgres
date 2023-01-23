@@ -1,0 +1,7 @@
+FROM postgres:latest
+
+ENV POSTGRES_HOST_AUTH_METHOD=trust
+
+EXPOSE 5435
+
+COPY initdb.sql /docker-entrypoint-initdb.d/
