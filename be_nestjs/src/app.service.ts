@@ -1,7 +1,8 @@
 import { Injectable, OnApplicationBootstrap  } from '@nestjs/common';
 
 @Injectable()
-export class AppService {
+export class AppService implements OnApplicationBootstrap {
+//https://docs.nestjs.com/fundamentals/lifecycle-events
 
 
    onApplicationBootstrap() {
